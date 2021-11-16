@@ -3,11 +3,13 @@ import { createApp } from 'vue'
 import { createRouter , createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import Pokedex from './pages/Pokedex.vue'
+import Calculator from './pages/calculator.vue'
 
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/pokedex', component: Pokedex }
+    { path: '/pokedex', component: Pokedex },
+    { path: '/calculator', component: Calculator }
 ]
 
 // 3. Create the router instance and pass the `routes` option
