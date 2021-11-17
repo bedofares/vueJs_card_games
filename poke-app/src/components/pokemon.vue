@@ -11,14 +11,31 @@ export default {
     pokemon:[],
   }
 },
-  methods:{
-  async catchAll(){
+  async mounted(){
+    const localData = localStorage.getItem('pokemon')
+    if(localData){
+      console.log("from storage")
+      return this.pokemon = JSON.parse(localData)
+      //this.list = localData
+    }
     const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
     const data = await fetch(url);
     const pokemon = await data.json();
+    localStorage.setItem('pokemon',JSON.stringify(pokemon.results))
+
+    console.log('from fetch')
     this.pokemon = pokemon.results;
-  }
-},
+  },
+
+
+//   methods:{
+//   async catchAll(){
+//     const url = 'https://pokeapi.co/api/v2/pokemon?limit=151';
+//     const data = await fetch(url);
+//     const pokemon = await data.json();
+//     this.pokemon = pokemon.results;
+//   }
+// },
 }
 </script>
 
