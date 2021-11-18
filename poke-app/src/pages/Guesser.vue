@@ -42,6 +42,7 @@ export default {
       nextGuess: undefined,
       guesses: 0,
       points:0,
+      gussed:false,
     }
   },
   computed:{
@@ -56,7 +57,9 @@ export default {
     },
 
     guessCard(color){
-      this.nextGuess = color
+      this.nextGuess = color;
+      this.gussed = true
+      console.log(this.gussed)
     },
 
     async drawCard(){
@@ -70,6 +73,9 @@ export default {
         this.points++
       }
       this.cards.push(cards[0])
+
+      this.gussed = false;
+      console.log(this.gussed)
       // const cleanCard = {
       //   value: cards[0].value,
       //   symbol: cardSymbol(cards[0]),
@@ -91,7 +97,7 @@ export default {
     <button @click="guessCard('red')" class="btn btn-danger rounded-pill me-2">Guess Red</button>
     <br>
     <button @click="guessCard('black')" class="btn btn-dark rounded-pill me-2">Guess Black</button>
-      <button @click="drawCard" class="btn btn-secondary rounded-pill" >Draw a card</button>
+      <button @click="drawCard" class="btn btn-secondary rounded-pill" :disabled="!gussed" >Draw a card</button>
 
     </div>
     <br>
