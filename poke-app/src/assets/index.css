@@ -1,0 +1,17 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    background-color:#fdf9f7 ;
+    font-family: 'Bungee', cursive;}
+
+/*h1{*/
+/*    @apply text-6xl font-bold;*/
+/*}*/
+
+.navItem{
+    text-decoration: none;
+}

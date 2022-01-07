@@ -18,6 +18,6 @@ export default {
 
 
 <template>
-<h1 class="text-center">Calculator</h1>
+<h1 class="text-center fs-1 mt-3 mb-3">Calculator</h1>
   <Calculator></Calculator>
 </template>

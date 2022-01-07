@@ -14,6 +14,7 @@ export default {
     console.log(state.guesser.gussed)
   },
   pushNewCard(state, newCard) {
+    state.guesser.cards.pop();
     state.guesser.cards.push(newCard);
   },
 };

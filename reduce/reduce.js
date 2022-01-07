@@ -33,14 +33,9 @@ const dataset = [
 ];
 
 
-dataset.forEach(v =>{
-    if(acc[currentValue]){
-        acc[currentValue]++
-    }else{
-        acc[currentValue] = 1
-    }
-})
-
+// This is the reducer function, that holds the actual logic
+// acc (accumulator) is a value we return (or pass in initially)
+// key is the current value of the array (like in a foreach)
 const reducer = (acc , currentValue) =>{
     console.log(acc,currentValue)
     if(acc[currentValue]){

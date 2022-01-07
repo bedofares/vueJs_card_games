@@ -8,18 +8,49 @@
   </head>
   <body>
     <div id="app">
+
+        <nav>
+            <div >
+                <div class="relative border-1  flex items-center justify-content-center align-items-center  h-16">
+                        <div class="hidden sm:block sm:ml-6">
+                            <div class="flex space-x-4">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <a href="#" class="text-gray-500 hover:text-black  px-3 py-2 rounded-md text-sm font-medium" aria-current="page">
+                                    <router-link class="navItem hover:text-black fs-5" to="/">Home</router-link>
+                                </a>
+
+                                <a href="#" class="text-gray-500 hover:text-black px-3 py-2 rounded-md text-sm font-medium">
+                                    <router-link class="navItem hover:text-black fs-5" to="/pokedex">Pokedex</router-link><br>
+                                </a>
+
+                                <a href="#" class="text-gray-500 hover:text-black   px-3 py-2 rounded-md text-sm font-medium">
+                                    <router-link class="navItem hover:text-black fs-5" to="/calculator">Calculator</router-link><br>
+                                </a>
+
+                                <a href="#" class="text-gray-500 hover:text-black  px-3 py-2 rounded-md text-sm font-medium">
+                                    <router-link class="navItem hover:text-black fs-5"  to="/guesser">Guesser</router-link>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+        </nav>
         <!--HERE IS THE VUE APP-->
         <!-- use the router-link component for navigation. -->
         <!-- specify the link by passing the `to` prop. -->
         <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
+
+<!--        <div class="d-flex flex-row justify-content-center">-->
+<!--            <router-link to="/">Home</router-link><br>-->
+<!--            <router-link to="/pokedex">Pokedex</router-link><br>-->
+<!--            <router-link to="/calculator">Calculator</router-link><br>-->
+<!--            <router-link to="/guesser">Guesser</router-link>-->
+<!--        </div>-->
+
+
         <router-view class="text-center mt-3"> </router-view>
 
-        <div class="d-flex flex-row justify-content-center">
-        <router-link to="/">Home</router-link><br>
-        <router-link to="/pokedex">Pokedex</router-link><br>
-        <router-link to="/calculator">Calculator</router-link><br>
-        <router-link to="/guesser">Guesser</router-link>
-        </div>
+
 
     </div>
     <script type="module" src="/src/main.js"></script>
