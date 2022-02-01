@@ -71,7 +71,7 @@ export default {
       else {
         this.gameOver = false
       }
-      console.log(result)
+      //console.log(result)
     },
     async drawCard() {
       const result = await fetch(this.apiGetCards).then((r) => r.json());
@@ -84,7 +84,7 @@ export default {
       const valueOne = parseInt(translateCards( this.cardOne.value))
       const valueTwo = parseInt(translateCards( this.cardTwo.value))
       // console.log(valueOne , valueTwo)
-      console.log(remaining)
+      //console.log(remaining)
 
       if(valueOne > valueTwo) {this.player1Points++
         this.$notify({
