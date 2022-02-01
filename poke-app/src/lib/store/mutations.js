@@ -1,6 +1,7 @@
 export default {
   incrementPoints(state) {
     state.guesser.points++;
+    console.log(state.guesser)
   },
   incrementGuesses(state) {
     state.guesser.guesses++;
@@ -16,5 +17,6 @@ export default {
   pushNewCard(state, newCard) {
     state.guesser.cards.pop();
     state.guesser.cards.push(newCard);
+    console.log(state.guesser.cards)
   },
 };

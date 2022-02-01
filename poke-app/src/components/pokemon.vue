@@ -61,7 +61,7 @@
 <template>
   <div class="text-center p-2">
     <div class="
-    p-2
+  p-2
   bg-gray-200
   hover:bg-green-200
   rounded-md

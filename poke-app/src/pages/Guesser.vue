@@ -1,9 +1,6 @@
 <script>
-// import "bootstrap/dist/css/bootstrap.min.css"
-// import "bootstrap"
 import { mapState, mapActions, mapMutations } from 'vuex';
 
-//import { createStore } from 'vuex';
 
 export default {
   computed: {
@@ -30,12 +27,13 @@ export default {
       <button v-if="guesser.nextGuess" class="btn btn-secondary rounded-pill" @click="drawCard" :disabled="!guesser.gussed">Draw a card</button>
 
     </div>
+
     <br>
-    <div class="">
-    <p class="fs-3 text-muted fw-bold">Guesses:{{guesser.guesses}}</p>
-    <p class="fs-3 text-muted fw-bold">Points:{{guesser.points}}</p>
+    <div class="flex justify-center flex-row">
+    <p class="fs-3 text-muted fw-bold">Guesses: {{guesser.guesses}}</p>
+    <p class="fs-3 ml-5 text-muted fw-bold">Points: {{guesser.points}}</p>
     </div>
-    <p class="fs-4 text-muted mb-3">Your next guess:{{guesser.nextGuess}}</p>
+    <p class="fs-5 text-muted mb-3">Your next guess : {{guesser.nextGuess}}</p>
 
 
     <div v-for="(card, index) in guesser.cards" :key="index" class="mb-3">

@@ -5,7 +5,6 @@ export default {
   name : "CalculaterPage",
   data(){
     return{
-
     }
   },
   components : {

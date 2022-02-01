@@ -1,20 +1,18 @@
 <script>
-  // import "bootstrap/dist/css/bootstrap.min.css"
-  // import "bootstrap"
+
 </script>
 <template>
 <!--  <h1 class="text-center">HOME PAGE</h1>-->
-  <div class="d-flex flex-row mt-5">
-
-    <div class="col d-flex justify-content-end">
-      <div class="w-75 p-5">
-      <span class="fw-bold display-1 p-0">HI!</span>
-      <p class="text-uppercase fw-bold display-4 ">Welcome to my Advanced Topics of JavaScript project</p>
+  <div class="flex flex-col mt-5  md:flex-row ">
+    <div class="col flex justify-start lg:justify-end">
+      <div class="w-full text-center p-5  lg:w-9/12	md:text-left">
+      <span class="font-bold p-0 text-4xl md:text-6xl ">HI!</span>
+      <p class="text-uppercase font-bold text-4xl text-center lg:text-6xl md:text-center ">Welcome to my Advanced Topics of JavaScript project</p>
       </div>
     </div>
 
-    <div class="d-flex col overflow-hidden">
-     <img class=" bedoimg rounded-full justify-content-center	mx-auto d-block " src="../assets/bedo.jpeg">
+    <div class="d-flex col overflow-hidden mb-3">
+     <img class="bedoimg w-9/12  rounded-full justify-content-center	mx-auto d-block " src="../assets/bedo.jpeg">
     </div>
 
   </div>
@@ -23,7 +21,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 .bedoimg{
-  width: 500px;
+  /*width: 500px;*/
   transition: 0.5s all ease-in-out;
 }
 .bedoimg:hover {

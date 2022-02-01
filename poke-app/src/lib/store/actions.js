@@ -21,6 +21,7 @@ export default {
     );
     state.guesser.gussed = false
     console.log(state.guesser.gussed)
+    //console.log(state.guesser.nextGuess)
 
     const card = cards[0];
 
