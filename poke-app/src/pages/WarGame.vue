@@ -16,7 +16,6 @@ export default {
 
 </script>
 <template>
-<!--  <h1 class="text-center fs-1 mt-3 mb-3">♠♠ War Card Game ♠♠</h1>-->
   <warGame></warGame>
 
 </template>

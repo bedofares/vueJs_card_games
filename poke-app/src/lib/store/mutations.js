@@ -19,4 +19,5 @@ export default {
     state.guesser.cards.push(newCard);
     //console.log(state.guesser.cards)
   },
+
 };

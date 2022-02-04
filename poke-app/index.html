@@ -8,7 +8,6 @@
   </head>
   <body>
     <div id="app">
-
         <nav class="border-b">
             <div class="max-w-6xl mx-auto px-4 h-16">
                 <div class="flex justify-center content-center  h-16">
@@ -76,22 +75,15 @@
 
                             <router-link class="navItem hover:text-black fs-5 w-full" to="/guesser">Guesser</router-link>
                     </a></li>
+
+                    <li><a href="#" class="block text-sm px-2 py-4 text-gray-500 hover:text-black hover:bg-gray-200 transition duration-300">
+
+                        <router-link class="navItem hover:text-black fs-5 w-full" to="/war">War game </router-link>
+                    </a></li>
                 </ul>
             </div>
 
         </nav>
-        <!--HERE IS THE VUE APP-->
-        <!-- use the router-link component for navigation. -->
-        <!-- specify the link by passing the `to` prop. -->
-        <!-- `<router-link>` will render an `<a>` tag with the correct `href` attribute -->
-
-<!--        <div class="d-flex flex-row justify-content-center">-->
-<!--            <router-link to="/">Home</router-link><br>-->
-<!--            <router-link to="/pokedex">Pokedex</router-link><br>-->
-<!--            <router-link to="/calculator">Calculator</router-link><br>-->
-<!--            <router-link to="/guesser">Guesser</router-link>-->
-<!--        </div>-->
-
         <router-view class="text-center mt-3"> </router-view>
 
     </div>
