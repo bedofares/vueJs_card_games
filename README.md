@@ -1,6 +1,9 @@
+# Demo
+Demo : https://cc201013-atjs.netlify.app/
+
 # ATJS
 WELCOME TO MY ADVANCED TOPICS OF JAVASCRIPT PROJECT BCC20.
-Demo : https://cc201013-atjs.netlify.app/
+
 
 ## What will you'll find in my project
 - Calculator app
