@@ -10,7 +10,7 @@
   duration-100
   ">
     <img :src="imgString" alt="" class="inline" />
-    <h2 class="capitalize text-base md:text-2xl">{{ name }}</h2>
+    <h2 class="capitalize text-2xl">{{ name }}</h2>
   </div>
 
   </div>
