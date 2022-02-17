@@ -52,6 +52,8 @@ export default {
     async getDeck() {
       const result = await fetch(this.apiGetDeck).then((r) => r.json());
       this.deckId = result.deck_id;
+      // const test =  await fetch (`${API}/${this.deckId}/draw/?count=52`).then((r) => r.json());
+      // console.log(test)
       //Ask players to enter their names
       const player1Name = prompt("Player 1 name : ");
       const player2Name = prompt("Player 2 name : ");
@@ -82,6 +84,8 @@ export default {
       const cards = result
       this.cardOne = cards.cards[0]
       this.cardTwo = cards.cards[1]
+      // console.log(this.cardOne.code , this.cardTwo.code)
+      // console.log(this.cardOne.image , this.cardTwo.image)
 
       //Increment no. of rounds
       this.rounds++

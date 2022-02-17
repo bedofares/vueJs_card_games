@@ -1,23 +1,3 @@
-<!--<script>-->
-<!--import "bootstrap/dist/css/bootstrap.min.css"-->
-<!--import "bootstrap"-->
-<!--import Pokemon from '../components/pokemon.vue'-->
-
-<!--// Define a new global component called button-counter-->
-<!--export default {-->
-<!--  name :'PokedexPage',-->
-<!--  components:{-->
-<!--   Pokemon,-->
-<!--  }-->
-<!--}-->
-<!--</script>-->
-
-<!--<template>-->
-<!--  <h1 class="text-muted text-center">Pokedex Page</h1>-->
-<!--  <Pokemon></Pokemon>-->
-
-<!--</template>-->
-
 <script>
 import Pokeman from '../components/pokemon.vue';
 
@@ -56,13 +36,13 @@ export default {
 <template>
   <h1 class="text-center fs-1 mt-3 mb-3">Pokedex</h1>
 
-  <div class="flex flex-wrap">
+  <div class="flex flex-row flex-wrap justify-center align-items-center">
     <Pokeman
         v-for="(item, index) in list"
         :key="index"
         :name="item.name"
         :index="index"
-        class="w-1/3"
+        class="w-1/2 md:w-1/3"
     />
   </div>
 </template>

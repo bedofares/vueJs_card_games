@@ -60,32 +60,32 @@ export default {
 <template>
   <section class="container">
     <div class="d-flex  justify-content-center align-items-center text-center  text-black fw-bold">
-      <div class="calculator bg-gray-200">
-        <div class="calc">
+      <div class="calculator w-9/12	 	md:w-2/6 p-2	 bg-gray-200">
+        <div class="calc p-2 break-words">
           {{ calc }}
         </div>
-        <div class="value">
+        <div class="value p-2 break-words">
           {{ value }}
         </div>
         <div class="buttons">
           <div v-for="n in numberss" v-on:click="setModifier(n)"
-               class="btnn text-black hover:bg-green-200 cursor-pointer">
+               class="btnn w-2/6 flex justify-center align-items-center	text-black hover:bg-green-200 cursor-pointer">
             {{ n }}
           </div>
 
           <div v-for="op in operators" v-on:click="setModifier(op)"
-               class="btnn text-black hover:bg-green-200 cursor-pointer">
+               class="btnn w-2/6 flex justify-center align-items-center	text-black hover:bg-green-200 cursor-pointer">
             {{ op }}
           </div>
-          <div v-on:click="calculate" class="btn1 text-black hover:bg-green-200 cursor-pointer">
+          <div v-on:click="calculate" class="btn1 w-2/6 flex justify-center align-items-center text-black hover:bg-green-200 cursor-pointer">
             =
           </div>
 
-          <div v-on:click="reset" class="btn1 text-black hover:bg-green-200 cursor-pointer">
+          <div v-on:click="reset" class="btn1 w-2/6 flex justify-center align-items-center text-black hover:bg-green-200 cursor-pointer">
             C
           </div>
           <div v-on:click="Backspace"
-               class="btn1 text-black hover:bg-green-200 pointer-event d-flex justify-content-center align-items-center">
+               class="btn1 w-2/6 flex justify-center align-items-center text-black hover:bg-green-200 pointer-event d-flex justify-content-center align-items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace"
                  viewBox="0 0 16 16">
               <path
@@ -108,25 +108,21 @@ export default {
 }
 
 .calculator {
-  width: 450px;
+
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
-  padding: 20px;
 }
 
 .buttons {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  /*width: 280px;*/
-  margin: 0 auto;
 }
 
+
 .btnn {
-  flex: 0 0 110px;
-  height: 63px;
+  height: 50px;
   border: 1px solid transparent;
-  line-height: 61px;
   transition: all 0.8s;
   border-radius: 3px;
 }
@@ -136,10 +132,8 @@ export default {
 }
 
 .btn1 {
-  flex: 0 0 93px;
-  height: 63px;
+  height: 50px;
   border: 1px solid transparent;
-  line-height: 61px;
   transition: all 0.8s;
   border-radius: 3px;
 }
